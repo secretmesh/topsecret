@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 20th Birthday, unc!🎉</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Poppins", system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    }
+
+    .book {
+      width: 500px;
+      height: 650px;
+      perspective: 1600px;
+      position: relative;
+    }
+
+    .page {
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+      background-color: #ffffff;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transform-origin: center;
+      transition: transform 0.8s ease, opacity 0.8s ease;
+      cursor: pointer;
+    }
+
+    /* page flip = rotate forward + fade out */
+    .page.flipped {
+      transform: rotateY(-110deg) translateX(-30px) scale(0.95);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .cover {
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .message {
+      font-size: 1.05rem;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .hint {
+      position: absolute;
+      bottom: -32px;
+      font-size: 0.85rem;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+  <div class="book" id="book">
+
+    <!-- PAGE 0 : FRONT COVER -->
+    <!-- PAGE 0 : FRONT COVER -->
+    <div class="page cover" style="background-image: url('cover.jpg')">
+      🎉 Happy 20th Birthday! 🎉... unc
+      <div class="hint">Tap to open ➜</div>
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="page">
+      <div class="front message">
+        <p><strong>From Amy:</strong><br>Happy birthday! Thank you for creating such a safe place for so many people you are truly such an amazing person Im so proud of you for making it to 20 have a lovely day!</p>
+      </div>
+      <div class="back message">
+        <p></p>
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page">
+      <div class="front message">
+        <p><strong>From Tori:</strong><br>Happy birthday my favorite femboy. You truly mean so much to me, you have been an amazing friend to me and always have been there for me, I hope you truly understand how much I love you. I hope today is everything you wanted. Have a wonderful day lovely💙💙</p>
+      </div>
+      <div class="back message">
+        <p></p>
+      </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page" style="background-image: url('maxi.jpg')">
+      <div class="front message">
+        <p></p>
+      </div>
+      <div class="back message">
+        <p></p>
+      </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="page">
+      <div class="front message">
+        <p><strong>From Dan:</strong><br>Happy birthday, Soren! You're so amazing and mean so much to me. Can you believe you're TWENTY now? In a year you'll be 21 and then you can uh say idk but it'll be funny trust and I love you SO MUCH you are genuinely so amazing and my favorite dad in the whole wide world</p>
+      </div>
+      <div class="back message">
+        <p></p>
+      </div>
+    </div>
+
+    <!-- PAGE 5 -->
+    <div class="page">
+      <div class="front message">
+        <p><strong>From Ønyx:</strong><br>Hey Soren,
+Happy birthday, man. Im genuinely really glad you made it this far, and I hope you know how proud I am of you. Youre such an amazing person with a truly kind soul, and the way you care about people doesnt go unnoticed. You deserve every good thing that comes your way.
+I really hope you had (or are having) a good birthday today and that it gave you even a small reminder of how loved and appreciated you are. You mean a lot to me, and youre honestly one of my favorite friends. Im so grateful we met, and I wouldnt trade our friendship for anything. Thanks for being you and for existing the way you do.</p>
+      </div>
+      <div class="back message">
+        <p></p>
+      </div>
+    </div>
+
+    <!-- PAGE 6 -->
+    <div class="page">
+      <div class="front message">
+        <p><strong>From Folina:</strong><br>HAPPY BIRTHDAY ML💙
+Im so proud of you for making it so far! Youre such an amazing friend and Im so so grateful to have you in my life. Youve helped me so much, youre always there for me and youre just so cool and amazing. Youre the only one I can talk to about anything without being judged and I love you so much for that. You also have the best sense of humor ever and please dont die or go bald before we can marry (as a joke of course) 
+Also Im writing this while Im almost dying cause I feel sick af so please take it as a sign of how much I love you cause I might die a heart attack while writing this or smth. I wish you the best and hope your 20th year will be a much better one cause you deserve it and all the love in this universe. I really hope I get to meet you in person one day because ilysm 💔
+Youre my favorite person ever (after Tyler) and I hope you know that and idk what else to say cause Im very bad with words so uh… Im gonna cook beans or smth (inside joke of the year pls laugh)</p>
+      </div>
+      <div class="back message">
+        <p></p>
+      </div>
+    </div>
+
+    <!-- PAGE 7 -->
+    <div class="page">
+      <div class="front message">
+        <p>placeholder</p>
+      </div>
+      <div class="back message">
+        <p></p>
+      </div>
+    </div>
+
+    <!-- PAGE 8 -->
+    <div class="page">
+      <div class="front message">
+        <p>placeholder</p>
+      </div>
+      <div class="back message">
+        <p></p>
+      </div>
+    </div>
+
+    <!-- PAGE 9 : BACK COVER -->
+    <div class="page">
+      <div class="front message">
+        <p>We all love you 💕</p>
+      </div>
+      <div class="back cover" style="background-image: url('back.jpg')">
+        <p>— Your totally tubular clikkie friends that will always be here for you no matter what</p>
+      </div>
+    </div>
+
+    <div class="hint">Click pages to flip ➜</div>
+  </div>
+
+  <script>
+    const pages = document.querySelectorAll('.page');
+
+    pages.forEach((page, index) => {
+      page.style.zIndex = pages.length - index;
+
+      page.addEventListener('click', () => {
+        if (page.classList.contains('flipped')) return;
+        page.classList.add('flipped');
+      });
+    });
+  </script>
+</body>
+</html>
